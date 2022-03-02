@@ -1,0 +1,118 @@
+:root {
+  --primary-pale-blue: hsl(225, 100%, 94%);
+  --primary-bright-blue: hsl(245, 75%, 52%);
+
+  --neutral-very-pale-blue: hsl(225, 100%, 98%);
+  --neutral-desaturated-blue: hsl(224, 23%, 55%);
+  --neutral-dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 1.6rem;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-pale-blue);
+  background-image: url(images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+}
+
+.container {
+  max-width: 40rem;
+  background-color: var(--neutral-very-pale-blue);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.card {
+  text-align: center;
+  padding: 2.2rem;
+}
+
+.main-img {
+  max-width: 100%;
+}
+
+.title {
+  margin: 1.5rem;
+  font-size: 2.6rem;
+  font-weight: 900;
+  color: var(--neutral-dark-blue);
+}
+
+.paragraph {
+  color: var(--neutral-desaturated-blue);
+  line-height: 1.5;
+}
+
+.plan {
+  margin: 4rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info {
+  margin-left: -5rem;
+}
+
+.info-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--neutral-dark-blue);
+}
+
+.info-paragraph {
+  margin-left: -1rem;
+  color: var(--neutral-desaturated-blue);
+}
+
+.plan-link:hover,
+.plan-link:active {
+  text-decoration: none;
+  color: var(--primary-bright-blue);
+}
+
+.submit,
+.cancel {
+  display: block;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.submit:link,
+.submit:visited {
+  background-color: var(--primary-bright-blue);
+  color: var(--primary-pale-blue);
+  padding: 1.5rem;
+  border-radius: 10px;
+  margin: 5rem 1.5rem 3rem;
+}
+
+.submit:hover,
+.submit:active {
+  background-color: hsla(245, 75%, 52%, 0.7);
+}
+
+.cancel:link,
+.cancel:visited {
+  color: var(--neutral-desaturated-blue);
+  margin-bottom: 2rem;
+}
+
+.cancel:hover,
+.cancel:active {
+  color: var(--neutral-dark-blue);
+}
